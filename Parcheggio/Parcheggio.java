@@ -32,7 +32,7 @@ public class Parcheggio{
 
     public boolean entra(Car unaAutomobile, double ore){
         if(nPostiDisponibili > 0 && !listaParcheggio.contains(unaAutomobile)){
-            Car.postoMacchina();
+            //Car.postoMacchina(); Car è la classe, l'oggetto si chiama unaAutomobile. non compila
             listaParcheggio.add(unaAutomobile);
             return true;
         }else{
