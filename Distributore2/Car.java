@@ -8,15 +8,17 @@ public class Car{
         this.serbatoio = 0.0;
         this.resa = resa;
     }
-
+    //terribile, riguardati i concetti di oop
     public void drive(double serbatoio, double resa, double km){
         double carburanteNecessario = km*resa;
         serbatoio -= carburanteNecessario;
         
     }
-
-    public void addGas(double serbatoio, double benzinaAggiunta){
-        serbatoio += benzinaAggiunta;
+    //terribile
+    //public void addGas(double serbatoio, double benzinaAggiunta){
+    public void addGas(double benzinaAggiunta){
+        //brutta versione, veniva chiesta una cosa diversa
+       serbatoio += benzinaAggiunta;
     }
 
     public void setTarga(String targa){
@@ -44,7 +46,7 @@ public class Car{
     public double getTarga(){
         return targa;
     }
-
+//manca il toString()
     
 
 }
